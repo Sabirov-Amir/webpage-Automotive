@@ -221,6 +221,11 @@ body {
     }
 
     &__link {
+        width: 269px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
         a {
             width: 269px;
             height: 64px;

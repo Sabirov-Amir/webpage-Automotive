@@ -252,6 +252,13 @@ body {
   color: #fff;
   margin-left: 115px;
 }
+.story__link {
+  width: 269px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+}
 .story__link a {
   width: 269px;
   height: 64px;
