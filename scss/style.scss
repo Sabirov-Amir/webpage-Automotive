@@ -1,0 +1,405 @@
+@import "reset-style.scss";
+
+@font-face {
+    font-family: Monstserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Couture-Bold;
+    src: url(../fonts/Couture-Bold.otf);
+}
+
+@font-face {
+    font-family: PTSerif-Regular;
+    src: url(../fonts/PTSerif-Regular.ttf);
+}
+
+html {
+    height: 2092px;
+}
+
+body {
+    width: 1200px;
+    height: 2092px;
+    margin: 0px auto;  
+}
+
+.header {
+    width: 1200px;
+    height: 688px;
+    background-image: url(../img/bcg-up-1.webp), url(../img/bcg-up-2.webp);
+    padding: 38px 0px 0px 0px;
+
+    &__menu {
+        //border: 1px solid black;
+        width: 1012px;
+        height: 94px;
+        margin: 0px 104px 0px 84px;
+    }
+
+    &__info {
+        //border: 1px solid black;
+        width: 483px;
+        height: 258px;
+        margin: 125px 0px 0px 102px;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+    }
+
+    &__words {
+        //border: 1px solid black;
+        width: 520px;
+        height: 37px;
+    }
+}
+
+.words {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 0px 35px 0px;
+
+    &__link {
+        
+        a {
+            font-family: Monstserrat-Regular;
+            font-size: 18px;    
+            color: #fff;
+            letter-spacing: -0.36px;
+
+            &:hover {
+                //text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+                //color: #130e27;
+            }
+        }
+        
+        &_border {
+            //border: 1px solid black;
+            width: 85px;
+            height: 37px;
+            background-color: #130e27;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.info {
+
+    &__title {
+        white-space: nowrap;
+        font-family: Montserrat-Bold;
+        font-size: 90px;
+        line-height: 0.89;
+        letter-spacing: -1.8px;
+        color: #130e27;
+        span {
+            color: #ffffff;
+        }
+    }
+
+    &__subtitle {
+        margin: 34px 0px 0px 1px;
+        font-family: PTSerif-Regular;
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: -0.4px;
+        text-align: left;
+        color: #fff;
+    }
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------
+
+.main {
+    //border: 1px solid black;
+    width: 1200px;
+    height: 1216px;  
+
+    &__service {
+        //border: 1px solid black;
+        height: 482px;
+    }
+
+    &__story {
+        border: 1px solid black;
+        height: 120px;
+    }
+
+    &__price {
+        //border: 1px solid black;
+        height: 614px;
+    }
+}
+
+.service {
+    width: 992px;
+    padding-top: 38px;
+    margin: 0px auto 0px;
+
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin: 0px 0px 0px 6px;
+        font-family: Couture-Bold;
+        font-size: 50px;
+        letter-spacing: -1px;
+        color: #130e27;
+        span {
+            color: #c62314;
+        }
+    }
+
+    &__row-info-one {
+        height: 250px;
+    }
+}
+
+.row-info-one { 
+    //border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    &__column-one {
+        width: 175px;
+        height: 250px;
+    }
+}
+
+.column-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__icon {
+    }
+
+    &__text {
+        margin: 40px 0px 0px 0px;
+        font-family: PTSerif-Regular;
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: -0.4px;
+        text-align: center;
+        color: #161616;
+    }
+}
+//------------------------------------
+.story {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #130e27;
+
+    &__text {
+        //border: 1px solid black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 610px;
+        height: 64px;
+        font-family: PTSerif-Regular;
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: -0.4px;
+        color: #fff;
+    }
+
+    &__link {
+        //border: 1px solid black;
+        width: 269px;
+        height: 64px;
+        background-color: #c62314;
+        border-radius: 5px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            width: 269px;
+            height: 64px;
+            background-color: #c62314;
+            border-radius: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Monstserrat-Regular;
+            font-size: 22px;
+            letter-spacing: -0.44px;
+            color: #fff;
+            &:hover {
+                background-color: #9f1f13;
+            }
+        }
+    }
+}
+//------------------------------------
+.price {
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+
+    &__title {
+        font-family: Montserrat-Bold;
+        font-size: 50px;
+        letter-spacing: -1px;
+        text-align: left;
+        color: #130e27;
+    }
+
+    &__row-info-two {
+        //border: 1px solid black;
+        width: 1000px;
+        height: 392px;
+    }
+}
+
+.row-info-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+    &__column-two {
+        width: 318px;
+        height: 392px;
+    }
+}
+
+.column-two {
+    //border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+
+    &__suptitle {
+        font-family: PTSerif-Regular;
+        font-size: 22px;
+        letter-spacing: -0.44px;
+        color: #161616;
+    }
+
+    &__title {  
+        font-family: Montserrat-Bold;
+        font-size: 60px;
+        letter-spacing: -1.2px;
+        color: #c62314;
+    }
+
+    &__subtitle {
+        font-family: PTSerif-Regular;
+        font-size: 20px;
+        letter-spacing: -0.4px;
+        color: #161616;
+        text-align: center;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 205px;
+        height: 49px;
+        background-color: #130e27;
+        border-radius: 3.8px;
+        a {
+            font-family: Monstserrat-Regular;
+            font-size: 22px;
+            letter-spacing: -0.44px;
+            color: #fff;
+
+            width: 205px;
+            height: 49px;
+            background-color: #130e27;
+            border-radius: 3.8px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: #191235;
+            }
+        }
+
+        &_r {
+            background-color: #c62314;
+            a {
+                background-color: #c62314;
+                &:hover {
+                    background-color: #9f1f13;
+                }
+            }
+        }
+    }
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------
+
+.footer {
+    //border: 1px solid black;
+    height: 188px;
+    background-color: #130e27;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__info {
+        //border: 1px solid black;
+        width: 560px;
+        height: 69px;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        font-family: PTSerif-Regular;
+        font-size: 20px;
+        letter-spacing: -0.4px;
+        color: #fff;
+        span {
+            margin-left: 4px;
+            color: #c62314;
+        }
+    }
+
+    &__logo {
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
