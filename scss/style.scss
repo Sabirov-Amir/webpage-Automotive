@@ -39,14 +39,12 @@ body {
     padding: 38px 0px 0px 0px;
 
     &__menu {
-        //border: 1px solid black;
         width: 1012px;
         height: 94px;
         margin: 0px 104px 0px 84px;
     }
 
     &__info {
-        //border: 1px solid black;
         width: 483px;
         height: 258px;
         margin: 125px 0px 0px 102px;
@@ -61,7 +59,6 @@ body {
     }
 
     &__words {
-        //border: 1px solid black;
         width: 520px;
         height: 37px;
     }
@@ -80,15 +77,9 @@ body {
             font-size: 18px;    
             color: #fff;
             letter-spacing: -0.36px;
-
-            &:hover {
-                //text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
-                //color: #130e27;
-            }
         }
         
         &_border {
-            //border: 1px solid black;
             width: 85px;
             height: 37px;
             background-color: #130e27;
@@ -96,6 +87,10 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            &:hover {
+                //text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+                background-color: #03010d;
+            }
         }
     }
 }
@@ -128,12 +123,10 @@ body {
 //------------------------------------------------------------------------------------------------------------------------------------
 
 .main {
-    //border: 1px solid black;
     width: 1200px;
     height: 1216px;  
 
     &__service {
-        //border: 1px solid black;
         height: 482px;
     }
 
@@ -143,7 +136,6 @@ body {
     }
 
     &__price {
-        //border: 1px solid black;
         height: 614px;
     }
 }
@@ -173,7 +165,6 @@ body {
 }
 
 .row-info-one { 
-    //border: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -206,34 +197,32 @@ body {
 //------------------------------------
 .story {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     background-color: #130e27;
 
     &__text {
-        //border: 1px solid black;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
         width: 610px;
         height: 64px;
+
         font-family: PTSerif-Regular;
         font-size: 20px;
         line-height: 1.4;
         letter-spacing: -0.4px;
         color: #fff;
+
+        margin-left: 115px;
     }
 
     &__link {
-        //border: 1px solid black;
         width: 269px;
-        height: 64px;
-        background-color: #c62314;
-        border-radius: 5px;
-
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 90px;
         a {
             width: 269px;
             height: 64px;
@@ -248,8 +237,12 @@ body {
             font-size: 22px;
             letter-spacing: -0.44px;
             color: #fff;
+
+            transition-duration: 500ms; // ------ add animations 
             &:hover {
+                transition-duration: 500ms; // ------ add animations 
                 background-color: #9f1f13;
+                width: 220px;
             }
         }
     }
@@ -271,7 +264,6 @@ body {
     }
 
     &__row-info-two {
-        //border: 1px solid black;
         width: 1000px;
         height: 392px;
     }
@@ -290,7 +282,6 @@ body {
 }
 
 .column-two {
-    //border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -320,34 +311,34 @@ body {
     }
 
     &__link {
+        width: 205px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 205px;
-        height: 49px;
-        background-color: #130e27;
-        border-radius: 3.8px;
         a {
             font-family: Monstserrat-Regular;
             font-size: 22px;
             letter-spacing: -0.44px;
             color: #fff;
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             width: 205px;
             height: 49px;
             background-color: #130e27;
             border-radius: 3.8px;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            transition-duration: 500ms; // ------ add animations 
             &:hover {
+                transition-duration: 500ms; // ------ add animations 
                 background-color: #191235;
+                width: 170px;
             }
         }
 
         &_r {
-            background-color: #c62314;
             a {
                 background-color: #c62314;
                 &:hover {
@@ -361,7 +352,6 @@ body {
 //------------------------------------------------------------------------------------------------------------------------------------
 
 .footer {
-    //border: 1px solid black;
     height: 188px;
     background-color: #130e27;
 
@@ -370,7 +360,6 @@ body {
     align-items: center;
 
     &__info {
-        //border: 1px solid black;
         width: 560px;
         height: 69px;
 
@@ -392,14 +381,6 @@ body {
 
     }
 }
-
-
-
-
-
-
-
-
 
 
 
