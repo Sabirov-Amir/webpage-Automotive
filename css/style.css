@@ -276,7 +276,7 @@ body {
 .story__link a:hover {
   transition-duration: 500ms;
   background-color: #9f1f13;
-  width: 220px;
+  width: 230px;
 }
 
 .price {
